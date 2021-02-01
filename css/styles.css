@@ -1,6 +1,6 @@
 :root {
-  --primary:#FFF;
-  --secondary:#000;
+  --primary:#fff;
+  --secondary:#83c5be;
 }
 
 * {
@@ -11,4 +11,44 @@
 html {
   background: var(--secondary);
   color: var(--primary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  width: 500px;
+  height: 800px;
+  background-color: #006d77;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 40px;
+}
+
+.card p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-icon {
+  width: 100px;
+  margin: 50px 20px 0;
+  transform: translateY(0);
+  transition: transform 150ms ease-in-out;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
 }
